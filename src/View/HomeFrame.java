@@ -94,31 +94,36 @@ public class HomeFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jPanel6 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         LastName = new javax.swing.JTextField();
         FirstName = new javax.swing.JTextField();
-        jComboBoxCity = new javax.swing.JComboBox<>();
         jComboBoxGender = new javax.swing.JComboBox<>();
+        jComboBoxCity = new javax.swing.JComboBox<>();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaAddress = new javax.swing.JTextArea();
         jButtonDelete = new javax.swing.JButton();
+        jButtonInsert = new javax.swing.JButton();
         jButtonUpdate = new javax.swing.JButton();
         jButtonClear = new javax.swing.JButton();
-        jButtonInsert = new javax.swing.JButton();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -138,136 +143,51 @@ public class HomeFrame extends javax.swing.JFrame {
         jLabel9.setText("Home Page");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Click this button to show user list ");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 20, 380, 40));
+
+        jButton5.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(0, 150, 243));
+        jButton5.setText("SHOW USER LIST");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1590, 20, 290, 30));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/facebook.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 30, 80, 70));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/instagram.png"))); // NOI18N
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, 70, 70));
+
+        jButton1.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 150, 243));
-        jButton1.setText("Show user list");
+        jButton1.setText(" PROJECT MANAGEMENT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 40, 190, 50));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1590, 70, 290, 30));
 
-        jLabel2.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("click this button to show user list ->");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 40, 410, 50));
+        jLabel13.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Go to the project management");
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 70, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1940, 120));
 
         jPanel3.setBackground(new java.awt.Color(0, 150, 243));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/website (2).png"))); // NOI18N
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 10, 70, -1));
+
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 900, 1940, 130));
-
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 150, 243), 2), "Home Page", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 18), new java.awt.Color(0, 150, 243))); // NOI18N
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 150, 243));
-        jLabel3.setText("Address");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 150, 243));
-        jLabel4.setText("First Name");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 150, 243));
-        jLabel5.setText("Last Name");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 150, 243));
-        jLabel6.setText("Gender");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 150, 243));
-        jLabel7.setText("City");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 150, 243));
-        jLabel8.setText("Date");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
-
-        LastName.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        LastName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LastNameActionPerformed(evt);
-            }
-        });
-        jPanel4.add(LastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 690, 50));
-
-        FirstName.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jPanel4.add(FirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 690, 50));
-
-        jComboBoxCity.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jComboBoxCity.setForeground(new java.awt.Color(0, 150, 243));
-        jComboBoxCity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Colombo", "Gampaha", "Kaluthara", "Jaffa" }));
-        jPanel4.add(jComboBoxCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 690, 50));
-
-        jComboBoxGender.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jComboBoxGender.setForeground(new java.awt.Color(0, 150, 243));
-        jComboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        jPanel4.add(jComboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 690, 50));
-
-        jTextAreaAddress.setColumns(20);
-        jTextAreaAddress.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jTextAreaAddress.setRows(5);
-        jScrollPane1.setViewportView(jTextAreaAddress);
-
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 480, 690, 70));
-
-        jButtonDelete.setBackground(new java.awt.Color(0, 150, 243));
-        jButtonDelete.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jButtonDelete.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonDelete.setText("DELETE");
-        jButtonDelete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDeleteActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButtonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 660, 330, 50));
-
-        jButtonUpdate.setBackground(new java.awt.Color(0, 150, 243));
-        jButtonUpdate.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jButtonUpdate.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonUpdate.setText("UPDATE");
-        jButtonUpdate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonUpdateActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButtonUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 590, 330, 50));
-
-        jButtonClear.setBackground(new java.awt.Color(0, 150, 243));
-        jButtonClear.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jButtonClear.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonClear.setText("CLEAR");
-        jButtonClear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonClearActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButtonClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 660, 330, 50));
-
-        jButtonInsert.setBackground(new java.awt.Color(0, 150, 243));
-        jButtonInsert.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jButtonInsert.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonInsert.setText("INSERT");
-        jButtonInsert.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonInsertActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButtonInsert, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 590, 330, 50));
-        jPanel4.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, 690, 110));
-
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 990, 750));
 
         jTable1.setFont(new java.awt.Font("Sylfaen", 1, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -315,36 +235,124 @@ public class HomeFrame extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 520, 880, 360));
 
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 255), 2), "Home Page", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 18), new java.awt.Color(0, 153, 255))); // NOI18N
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 150, 243));
+        jLabel4.setText("First name");
+        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 200, 50));
+
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 150, 243));
+        jLabel5.setText("Last name");
+        jPanel6.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 200, 50));
+
+        jLabel6.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 150, 243));
+        jLabel6.setText("Gender");
+        jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 200, 50));
+
+        jLabel7.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 150, 243));
+        jLabel7.setText("City");
+        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 200, 50));
+
+        jLabel8.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 150, 243));
+        jLabel8.setText("Date");
+        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 200, 50));
+
+        jLabel10.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 150, 243));
+        jLabel10.setText("Address");
+        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 200, 50));
+        jPanel6.add(LastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 590, 50));
+        jPanel6.add(FirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 590, 50));
+
+        jComboBoxGender.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jComboBoxGender.setForeground(new java.awt.Color(0, 150, 243));
+        jComboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other", " " }));
+        jComboBoxGender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxGenderActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jComboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 590, 50));
+
+        jComboBoxCity.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jComboBoxCity.setForeground(new java.awt.Color(0, 150, 243));
+        jComboBoxCity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Colombo", "Gampaha", "Kaluthara", "Galle", " " }));
+        jComboBoxCity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxCityActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jComboBoxCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 590, 50));
+        jPanel6.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, 590, 80));
+
+        jTextAreaAddress.setColumns(20);
+        jTextAreaAddress.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jTextAreaAddress.setForeground(new java.awt.Color(0, 150, 243));
+        jTextAreaAddress.setRows(5);
+        jScrollPane1.setViewportView(jTextAreaAddress);
+
+        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 470, 590, 80));
+
+        jButtonDelete.setBackground(new java.awt.Color(0, 150, 243));
+        jButtonDelete.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jButtonDelete.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonDelete.setText("DELETE");
+        jButtonDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDeleteActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButtonDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 660, 290, 60));
+
+        jButtonInsert.setBackground(new java.awt.Color(0, 150, 243));
+        jButtonInsert.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jButtonInsert.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonInsert.setText("INSERT");
+        jButtonInsert.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonInsertActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButtonInsert, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 590, 290, 60));
+
+        jButtonUpdate.setBackground(new java.awt.Color(0, 150, 243));
+        jButtonUpdate.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jButtonUpdate.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonUpdate.setText("UPDATE");
+        jButtonUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonUpdateActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButtonUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 590, 290, 60));
+
+        jButtonClear.setBackground(new java.awt.Color(0, 150, 243));
+        jButtonClear.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jButtonClear.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonClear.setText("CLEAR");
+        jButtonClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonClearActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButtonClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 660, 290, 60));
+
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 970, 750));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1940, 1020));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void LastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LastNameActionPerformed
-
-    private void jButtonInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInsertActionPerformed
-        
-        //this means on insert button click get values from user input
-        String firstName = FirstName.getText();
-        String lastName = LastName.getText();
-        String gender = (String) jComboBoxGender.getSelectedItem();
-        String city = (String) jComboBoxCity.getSelectedItem();
-        Date date = jDateChooser1.getDate();
-        String address = jTextAreaAddress.getText();
-        
-        //object of HomeBean class
-        HomeBean homeBean = new HomeBean(0, firstName, lastName, gender, city, date, address); // passing values to the constructor
-        
-        //object of HomeBal class
-        HomeBal homeObj = new HomeBal();
-        homeObj.insert(homeBean); //through object passing object to insert method
-        loadTable();
-        clearTextFields();
-    }//GEN-LAST:event_jButtonInsertActionPerformed
         
     int id = 0; //global variable (because through this variable can make updating process)
+    
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         int row = jTable1.getSelectedRow();
         if(row < 0) {
@@ -362,8 +370,18 @@ public class HomeFrame extends javax.swing.JFrame {
             jDateChooser1.setDate(bean.getDate());
             jTextAreaAddress.setText(bean.getAddress());
             
+            
+            
         }
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jComboBoxGenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxGenderActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxGenderActionPerformed
+
+    private void jComboBoxCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxCityActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxCityActionPerformed
 
     private void jButtonUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUpdateActionPerformed
         
@@ -373,30 +391,51 @@ public class HomeFrame extends javax.swing.JFrame {
         String city = (String) jComboBoxCity.getSelectedItem();
         Date date = jDateChooser1.getDate();
         String address = jTextAreaAddress.getText();
+        
         HomeBean bean = new HomeBean(id, firstName, lastName, gender, city, date, address);
         HomeBal bal = new HomeBal();
         bal.updateDate(bean);
-        loadTable(); // after update reload table again
+        loadTable();
         clearTextFields();
     }//GEN-LAST:event_jButtonUpdateActionPerformed
 
-    private void jButtonDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteActionPerformed
+    private void jButtonInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInsertActionPerformed
+        String firstName = FirstName.getText();
+        String lastName = LastName.getText();
+        String gender = (String) jComboBoxGender.getSelectedItem();
+        String city = (String) jComboBoxCity.getSelectedItem();
+        Date date = jDateChooser1.getDate();
+        String address = jTextAreaAddress.getText();
         
+        HomeBean homeBean = new HomeBean(0, firstName, lastName, gender,  city, date, address);
+        
+        HomeBal homeObj = new HomeBal();
+        homeObj.insert(homeBean);
+        loadTable();
+        clearTextFields();
+    }//GEN-LAST:event_jButtonInsertActionPerformed
+
+    private void jButtonDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteActionPerformed
         HomeBal bal = new HomeBal();
         bal.deleteRecord(id);
-        loadTable(); // reload table after deleting a record
+        loadTable();
         clearTextFields();
     }//GEN-LAST:event_jButtonDeleteActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        HomeBal bal = new HomeBal();
+        List<SignupBean> list = bal.loadSignupUsers();
+        loadSignupUsersIntoTable(list);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed
-        // call clear method 
         clearTextFields();
     }//GEN-LAST:event_jButtonClearActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    HomeBal bal = new HomeBal();
-    List<SignupBean> list = bal.loadSignupUsers();
-    loadSignupUsersIntoTable(list);
+        ProjectManagementFrame projectObj = new ProjectManagementFrame();
+        projectObj.show();
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -438,6 +477,7 @@ public class HomeFrame extends javax.swing.JFrame {
     private javax.swing.JTextField FirstName;
     private javax.swing.JTextField LastName;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButtonClear;
     private javax.swing.JButton jButtonDelete;
     private javax.swing.JButton jButtonInsert;
@@ -446,6 +486,10 @@ public class HomeFrame extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBoxGender;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -457,7 +501,7 @@ public class HomeFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

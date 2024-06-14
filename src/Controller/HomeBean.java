@@ -19,6 +19,7 @@ public class HomeBean {
     private String city;
     private Date date;
     private String address;
+   
     
     //constructor
 
@@ -30,7 +31,10 @@ public class HomeBean {
         this.city = city;
         this.date = date;
         this.address = address;
+        
     }
+
+ 
 
     public int getId() {
         return id;
@@ -90,6 +94,6 @@ public class HomeBean {
         this.address = address;
     }
     
-    
+   
     
 }

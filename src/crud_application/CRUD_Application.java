@@ -7,7 +7,6 @@ package crud_application;
 
 import Model.DBconnection;
 import View.LoginFrame;
-import sun.security.jgss.LoginConfigImpl;
 
 
 public class CRUD_Application {

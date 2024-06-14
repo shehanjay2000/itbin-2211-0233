@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,6 +39,7 @@ public class HomeBal {
                 Date date = rs.getDate("Date");
                 String address = rs.getString("Address");
                 
+                
                 //create homebean object
                 HomeBean bean = new HomeBean(id, firstName, lastname, gender, city, date, address);
                 list.add(bean); //add bean in list
@@ -49,6 +51,8 @@ public class HomeBal {
         }
         return list;
     }
+    
+    
     
     //method for insert data
     public void insert(HomeBean homeBean){
@@ -64,6 +68,7 @@ public class HomeBal {
             ps.setString(4, homeBean.getCity());
             ps.setObject(5, homeBean.getDate());
             ps.setString(6, homeBean.getAddress());
+            
             
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "A record has been inserted!!");
@@ -90,6 +95,7 @@ public class HomeBal {
                 String city = rs.getString("City");
                 Date date = rs.getDate("Date");
                 String address = rs.getString("Address");
+                
                 bean = new HomeBean(ids, firstName, lastname , gender, city, date, address);
                 
                 
@@ -103,7 +109,7 @@ public class HomeBal {
         //method for update
     public void updateDate(HomeBean bean){
         try {
-            String query = "UPDATE employee SET FirstName = ?, LastName = ?, Gender = ?, City = ?, Date = ?, Address = ? WHERE Id = ?";
+            String query = "UPDATE employee SET FirstName = ?, LastName = ?, Gender = ?, City = ?, Date = ?, Address = ?  WHERE Id = ?";
             PreparedStatement ps = DBconnection.con.prepareStatement(query);
             ps.setString(1, bean.getFirstName());
             ps.setString(2, bean.getLastName());
@@ -133,7 +139,7 @@ public class HomeBal {
         }
     }
     
-    
+
 
 
     public List<SignupBean> loadSignupUsers() {
@@ -155,6 +161,5 @@ public class HomeBal {
     return list;
     }
 
-    
     }
 

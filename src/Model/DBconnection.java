@@ -23,7 +23,7 @@ public class DBconnection {
         
         String url = "jdbc:mysql://localhost:3306/crud_application";
         String root = "root";
-        String pass = "";
+        String pass = "Shehan123@";
         
         try {
             con = DriverManager.getConnection(url, root, pass);
